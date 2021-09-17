@@ -1,6 +1,6 @@
 package inheritance;
 
-public class Akademisyen extends Calisan{
+public abstract class Akademisyen extends Calisan{
 
         String bolum,gorev;
         String  ders;
@@ -11,6 +11,9 @@ public class Akademisyen extends Calisan{
                 this.bolum = bolum;
                 this.gorev = gorev;
                 this.ders = ders;
+        }
+        public  String giris(){
+                return super.giris()+ " a kapısından";
         }
 
         public String getBolum() {
@@ -41,6 +44,6 @@ public class Akademisyen extends Calisan{
 
                 System.out.println("derse gir ");
         }
-
+                public abstract void giris2(int girisS);
 
 }

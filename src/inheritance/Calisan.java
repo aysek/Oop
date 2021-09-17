@@ -44,9 +44,10 @@ public class Calisan {
         Calisan.giris_sayisi = giris_sayisi;
     }
 
-    public static void giris(){
-        System.out.println("çalışan giris yaptı");
-        System.out.println(giris_sayisi++);
+    public  String giris(){
+
+        //System.out.println(giris_sayisi++);
+        return  this.adSoyad+ " giris yaptı";
     }
 
 
@@ -58,7 +59,13 @@ public class Calisan {
         System.out.println("");
     }
 
+    public static void listele(Calisan[] girisYapanlar){
 
+        for(Calisan c:girisYapanlar){
+            System.out.println(c.giris());
+        }
+
+    }
 
 
 }

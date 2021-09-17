@@ -14,4 +14,9 @@ public class OgretimUyesi extends Akademisyen{
     public void setUnvan(String unvan) {
         this.unvan = unvan;
     }
+
+    @Override
+    public void giris2(int girisS) {
+
+    }
 }

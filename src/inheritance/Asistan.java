@@ -16,4 +16,15 @@ public class Asistan extends Akademisyen{
     public void setYuksekLisans(String yuksekLisans) {
         this.yuksekLisans = yuksekLisans;
     }
+    public  String giris(){
+        return super.giris()+ "  asistan";
+    }
+
+    @Override
+    public void giris2(int girisS) {
+        Akademisyen.giris_sayisi=girisS;
+        System.out.println(Akademisyen.giris_sayisi++);
+    }
+
+
 }
